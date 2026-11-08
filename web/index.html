@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTun City - Garage System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data-view="garage">
+
+    <!-- Vùng kéo chuột xoay camera / lăn chuột zoom -->
+    <div id="cam-capture"></div>
+
+    <!-- TRÁI -->
+    <div class="left-panel">
+        <div class="header-box">
+            <img class="server-logo" src="./512.png" alt="ToolTun City" onerror="this.style.display='none'">
+            <div class="badge-tag"><span>TOOLTUN CITY GARAGE</span></div>
+            <h1 class="main-title" id="garage-title">PUBLIC PARKING</h1>
+            <div class="slot-count-badge" id="vehicle-count">0 VEHICLES</div>
+        </div>
+        <div class="vehicle-list" id="vehicle-list"></div>
+    </div>
+
+    <!-- PHẢI -->
+    <div class="right-panel" id="right-panel">
+        <div class="panel-header">
+            <div class="panel-header-text">
+                <span data-i18n="inspection">VEHICLE INSPECTION</span>
+                <h2 id="info-veh-name">SELECT A VEHICLE</h2>
+            </div>
+            <div class="panel-badge-num" id="info-plate">---</div>
+        </div>
+
+        <div class="panel-body" id="panel-body-content">
+            <div class="placeholder-text" id="placeholder" data-i18n="placeholder">Choose a vehicle from the list on the left.</div>
+
+            <div id="veh-details-wrap" class="hidden">
+                <div class="info-desc-box" id="info-description"></div>
+
+                <div class="stat-group">
+                    <div class="stat-header"><span data-i18n="body">BODY</span><span id="val-body">100%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill green" id="bar-body" style="width: 100%"></div></div>
+                </div>
+
+                <div class="stat-group">
+                    <div class="stat-header"><span data-i18n="engine">ENGINE</span><span id="val-engine">100%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill green" id="bar-engine" style="width: 100%"></div></div>
+                </div>
+
+                <div class="stat-group">
+                    <div class="stat-header"><span data-i18n="fuel">FUEL</span><span id="val-fuel">100%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill green" id="bar-fuel" style="width: 100%"></div></div>
+                </div>
+
+                <div class="btn-actions" style="margin-top: 24px;">
+                    <button class="btn-main" id="btn-takeout">
+                        <span id="btn-takeout-text">TAKE OUT</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHÍM TẮT -->
+    <div class="bottom-controls">
+        <div class="hint-group">
+            <div class="key-badge"><span data-i18n="keyNavigate">UP / DOWN</span> <b data-i18n="hintNavigate">SELECT</b></div>
+            <div class="key-badge"><span data-i18n="keyDrag">DRAG</span> <b data-i18n="hintDrag">ROTATE</b></div>
+            <div class="key-badge"><span data-i18n="keyZoom">WHEEL</span> <b data-i18n="hintZoom">ZOOM</b></div>
+            <div class="key-badge"><span data-i18n="keySelect">ENTER</span> <b data-i18n="hintSelect">TAKE OUT</b></div>
+            <div class="key-badge"><span data-i18n="keyClose">ESC</span> <b data-i18n="hintClose">CLOSE</b></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

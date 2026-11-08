@@ -1,0 +1,61 @@
+{
+    "error": {
+        "no_space": "Đã có xe khác chiếm chỗ này.",
+        "no_access": "Bạn không có quyền vào gara này",
+        "no_vehicles": "Hiện bạn không có xe nào ở địa điểm này...",
+        "not_impound": "Xe của bạn không ở bãi giữ xe",
+        "not_owned": "Không thể cất giữ xe này",
+        "not_correct_type": "Bạn không thể cất loại xe này ở đây",
+        "not_enough": "Không đủ tiền",
+        "vehicle_occupied": "Không thể cất xe khi trong xe không trống",
+        "in_vehicle": "Bạn đang ở trong xe rồi...",
+        "spawn_failed": "Đã xảy ra lỗi khi tạo xe",
+        "spawn_in_progress": "Vui lòng chờ xe của bạn được giao đến..."
+    },
+    "success": {
+        "vehicle_parked": "Đã cất xe"
+    },
+    "menu": {
+        "information": "Thông tin",
+        "description": "Tên: %s\nBiển số: %s\nPhí giữ xe: $%s",
+        "body": "Thân xe",
+        "engine": "Động cơ",
+        "fuel": "Nhiên liệu",
+        "take_out": "Lấy xe ra",
+        "veh_impounded": "Xe của bạn đã bị cảnh sát tạm giữ",
+        "already_out": "Xe của bạn đang ở ngoài..."
+    },
+    "info": {
+        "car_e": "E - Mở gara",
+        "park_e": "E - Cất xe",
+        "impound_e": "E - Mở bãi giữ xe",
+        "car_radial": "Gara",
+        "park_radial": "Đỗ xe",
+        "impound_radial": "Bãi giữ xe"
+    },
+    "ui": {
+        "inspection": "KIỂM TRA XE",
+        "select_vehicle": "CHỌN MỘT XE",
+        "placeholder": "Chọn một xe ở danh sách bên trái để xem tình trạng và lấy xe ra.",
+        "body": "THÂN XE",
+        "engine": "ĐỘNG CƠ",
+        "fuel": "NHIÊN LIỆU",
+        "take_out": "LẤY XE RA",
+        "pay_depot": "TRẢ PHÍ ($%s)",
+        "vehicles_found": "%s XE",
+        "no_vehicles": "Không có xe nào trong gara này.",
+        "status_garaged": "Trong gara",
+        "status_out": "Đang ở ngoài",
+        "status_impounded": "Bị tạm giữ",
+        "key_navigate": "LÊN / XUỐNG",
+        "hint_navigate": "CHỌN XE",
+        "key_select": "ENTER",
+        "hint_select": "LẤY XE",
+        "key_drag": "KÉO CHUỘT",
+        "hint_drag": "XOAY CAMERA",
+        "key_zoom": "LĂN CHUỘT",
+        "hint_zoom": "PHÓNG TO / THU NHỎ",
+        "key_close": "ESC",
+        "hint_close": "ĐÓNG"
+    }
+}
